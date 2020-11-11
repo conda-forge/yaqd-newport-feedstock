@@ -1,5 +1,5 @@
 {% set name = "yaqd-newport" %}
-{% set version = "2020.7.0" %}
+{% set version = "2020.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 86332d208375b39523d4e5167f8154187a6ee7989ba60a1716bf1a63802d64fe
+  sha256: 1db884806f25420fbe712b6d5ba80c29746fe218828d4da208bc7796e752baa6
 
 build:
   number: 0
@@ -24,11 +24,11 @@ requirements:
     - pip
     - flit
     - pyserial
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2020.10.1
   run:
     - python >=3.7
     - pyserial 
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2020.10.1
 
 test:
   imports:
