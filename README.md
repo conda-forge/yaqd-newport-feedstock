@@ -5,11 +5,11 @@ Home: https://yaq.fyi
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-newport-feedstock/blob/master/LICENSE.txt)
 
 Summary: yaq daemons for Newport hardware
 
-
+Development: https://gitlab.com/yaq/yaqd-newport
 
 Current build status
 ====================
