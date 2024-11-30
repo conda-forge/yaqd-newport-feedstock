@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: eef2928c5f5274ee19d117f9fa0d1888b43695ca3d387b028f9baa09e4b2cbfd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-newport-conex-agp = yaqd_newport._newport_conex_agp:NewportConexAGP.main
@@ -20,13 +20,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
     - pyserial
     - yaqd-core >=2020.10.1
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pyserial
     - yaqd-core >=2020.10.1
 
@@ -39,6 +39,7 @@ test:
     - yaqd-newport-smc100 --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi
