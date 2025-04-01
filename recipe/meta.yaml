@@ -1,5 +1,5 @@
 {% set name = "yaqd-newport" %}
-{% set version = "2025.3.0" %}
+{% set version = "2025.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 00d13eeeb12438fdf05e1dc6c5736ae132352c80d5f919c21617ec241285f96a
+  sha256: ab401da04808c43ef6d0aae4b204d0a4aa48e435ebf51aadea7c1705bb906d8b
 
 build:
   number: 0
